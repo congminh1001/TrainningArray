@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị trong mảng</title>
+</head>
+<body>
+<h1> Tìm giá trị trong mảng</h1>
+<script>
+    let n=prompt("Nhập vào giá trị của mảng.");
+    let i;
+    let a=[];
+    for (i=0;i<n;i++)
+    {
+        a[i]=prompt("Nhập vào giá trị phần tử thứ."+i);
+
+    }
+    let find=prompt("Nhập vào giá trị bạn muốn tìm kiếm.");
+    let count=0;
+   for (i=0;i<n;i++)
+   {
+       if (a[i]==find)
+       {
+           alert("có tồn tại");
+           break;
+       }
+       else
+       {
+           count++;
+       }
+   }
+    if(a==count)
+    {
+        alert("Không tồn tại");
+    }
+</script>
+</body>
+</html>

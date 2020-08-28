@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dãy fibonaci</title>
+</head>
+<body>
+<script>
+    let n=prompt("Nhâp vào số phần tử fibonaci bạn muốn hiển thị:");
+
+    function fibonacci(num){
+        let a = 1, b = 0, temp;
+        while (num > 0){
+            temp = a;
+            a = a + b;
+            b = temp;
+            num--;
+            document.write(b+"; ");
+        }
+    }
+fibonacci(n);
+</script>
+</body>
+</html>

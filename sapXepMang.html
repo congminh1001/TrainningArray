@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng</title>
+</head>
+<body>
+<h1>Sắp xếp mảng</h1>
+<script>
+    let n= +prompt("Nhap vao so phan tu cua mang");
+    let i,j;
+    let arr=[];
+    for (i=0;i<n;i++)
+    {
+        arr[i]= +prompt("Nhap vao gia tri cua mang");
+    }
+    for (i=0;i<n;i++)
+    {
+        document.write(arr[i]+" ");
+    }
+let temp;
+    for (i=0;i<n;i++)
+    {
+        for (j=i+1;j<n;j++)
+            if (arr[i]>arr[j])
+            {
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+    }
+    document.write('</br>');
+
+    for (i=0;i<n;i++)
+    {
+        document.write(arr[i]+ " ");
+    }
+</script>
+</body>
+</html>

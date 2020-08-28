@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược arr</title>
+</head>
+<body>
+<h1>Đảo ngược arr</h1>
+<script>
+    let n= prompt("Nhap vao so phan tu cua mang:");
+    let i;
+    let a=[];
+    for (i=0;i<n;i++)
+    {
+        a[i] = prompt("phan tu thu "+ i + " là:");
+    }
+    for (i=0;i<n;i++)
+    {
+        document.write(a[i] + ",");
+    }
+   a.reverse().join();
+    document.write('</br>');
+    document.write( a +" ");
+
+</script>
+</body>
+</html>

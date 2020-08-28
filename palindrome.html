@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra chuỗi Palindrome</title>
+</head>
+<body>
+<script>
+    let n=prompt("Nhap vào số phần tử của chuỗi");
+    let a= prompt("Nhập vào một chuỗi:");
+    let i;
+    for (i=0;i<n;i++)
+    {
+        a[i]=[a.split(" ")];
+    }
+
+    document.write(a);
+    document.write('</br>');
+    let count=0;
+    if(n%2!=0)
+    {
+        document.write("Dãy số không phải dãy palindrome");
+    }
+    for (i=0;i<n/2;i++)
+    {
+        if(  a[i]==a[n-1-i])
+        {
+            count++;
+        }
+    }
+alert(count);
+if(count==n/2)
+{
+    document.write("Dãy vừa nhập là dãy palindrome");
+}
+else
+{
+    document.write("Dãy vừa nhập không phải dãy palindrome");
+}
+
+</script>
+</body>
+</html>

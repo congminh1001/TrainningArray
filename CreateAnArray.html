@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Mảng</title>
+</head>
+<body>
+<h1>Khởi tạo Mảng</h1>
+<label>Nhập số phần tử bạn của mảng</label>
+<input type="number" id="array" placeholder="Số phần tử của mảng">
+<button type="submit" onclick="inputArray()">Click</button>
+<script>
+    function inputArray()
+    {
+        let n=Number(document.getElementById('array').value);
+        let i;
+        let a=[];
+        for (i=0;i<n;i++)
+        {
+            a[i]= +prompt("Nhap vao phan tu thu " + i);
+        }
+        for(i=0;i<a.length;i++)
+        {
+            document.write(a[i] +" ");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng hai chiều </title>
+</head>
+<body>
+<script>
+    let n = Number(prompt("Nhập vào số hàng của ma trận:"));
+    let m = Number(prompt("Nhập vào số cột của ma trận:"));
+    let i,j;
+    let arr = [[]];
+    for ( i=0;i<n;i++)
+    {
+        arr[i]=[];
+      for (j=0;j<m;j++)
+      {
+          arr[i][j]= Number(prompt("Nhập vào phần tử của mảng"+ "A["+i +"]"+"["+j+"]"));
+        }
+    }
+
+    for ( i=0;i<n;i++)
+    {
+        for (j=0;j<m;j++)
+        {
+            document.write( arr[i][j] + " ");
+        }
+        document.write('</br>');
+    }
+
+
+</script>
+</body>
+</html>

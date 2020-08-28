@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+    <style>
+       h1{
+           text-align: center;
+           color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>Dictionary</h1>
+<h3>Từ điển Việt - Anh</h3>
+<label > Nhập vào từ tra cứu</label>
+
+<input type="text" placeholder="Vietnamese" id="in"><br>
+<label> Dịch</label>
+
+<input type="text" placeholder="English">
+
+<button type="submit" onclick="td()" >Click</button>
+<script>
+    let a= document.getElementById('in').value;
+    function td()
+    {
+        let dict;
+        dict = [];
+        dict.push({
+            key:   "keyName",
+            value: "the value"
+        });
+    }
+    td(a);
+
+
+</script>
+</body>
+</html>
